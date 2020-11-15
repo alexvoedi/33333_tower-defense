@@ -3,8 +3,8 @@ import Path from './cell/Path'
 
 export default class Enemy {
 	constructor(spawn, wave) {
-		this.maxHitpoints = 5 + wave
-		this.hitpoints = 5 + wave
+		this.maxHitpoints = wave + (1.15 ** wave)
+		this.hitpoints = this.maxHitpoints
 		this.speed = 2
 
 		this.previous = null
