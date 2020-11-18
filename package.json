@@ -9,7 +9,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "dev": "webpack serve --watch"
+    "dev": "webpack serve --watch",
+    "build": "webpack"
   },
   "name": "tower-defense",
   "version": "1.0.0",
