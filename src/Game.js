@@ -73,7 +73,7 @@ export default class Game {
 			if (this.timeSinceLastWave > 3 * 1000 / 60) {
 				this.wave++
 				this.player.wave++
-				this.enemiesLeft = 5 + this.wave
+				this.enemiesLeft = 5
 				this.timeSinceLastWave = 0
 			}
 		}

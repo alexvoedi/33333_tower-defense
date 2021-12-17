@@ -63,7 +63,7 @@ export default class Tower extends Cell {
 			let enemyDead = closestEnemy.damage(game, this.baseDamage + this.level)
 			this.timer = 0
 
-			if (enemyDead) game.player.money += 1
+			if (enemyDead) game.player.money += 1 + game.wave
 		}
 	}
 
